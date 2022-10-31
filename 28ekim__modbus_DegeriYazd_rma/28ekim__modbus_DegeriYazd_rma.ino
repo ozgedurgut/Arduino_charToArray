@@ -15,7 +15,7 @@ void readSerialString (char *strArray) {
       i++;
       Serial.print(strArray[(i - 1)]);      //optional: for confirmation
     }
-    Serial.println();                        //optional: for confirmation
+    Serial.println();                       //optional: for confirmation
   }
 }
 void setup()
@@ -28,14 +28,10 @@ void loop()
   {
     Serial.println(":01031194000156");
     delay(100);
-//    Serial1.println(":01031194000156");
-    //Serial.println(":01050325FF00D3");   //D402Read
+//Serial1.println(":01031194000156");
+//Serial.println(":01050325FF00D3"); //D402Read
     delay(1000);
     i++;
   }
     readSerialString(serInString);
 }
-//  if (Serial.available()) {
-//      incomingByte = Serial.read();
-//      Serial.print("Deger:");
-//      Serial.println(incomingByte);
